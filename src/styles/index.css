@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap');
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #0C0B15;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #061A0E; }
+::-webkit-scrollbar-thumb { background: #1A5C2E; border-radius: 2px; }
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.75s ease, transform 0.75s ease;
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.d1 { transition-delay: 0.1s; }
+.d2 { transition-delay: 0.2s; }
+.d3 { transition-delay: 0.3s; }
+.d4 { transition-delay: 0.4s; }
+
+/* Custom Responsive Utilities */
+@media (min-width: 640px) {
+  .sm-hidden { display: none !important; }
+  .sm-flex { display: flex !important; }
+  .sm-block { display: block !important; }
+}
+
+@media (max-width: 639px) {
+  .sm-flex { display: none !important; }
+}
