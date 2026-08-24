@@ -111,7 +111,7 @@ export default function Contact() {
             </motion.div>
           ) : (
             <form onSubmit={handleSubmit} style={{ display: "grid", gap: 14 }}>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
+              <div className="mobile-grid-1" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
                 <input name="entry.1131438936" required placeholder="Full Name" style={{
                   background: LIGHT, border: `1px solid ${LIGHT2}`,
                   borderRadius: 10, padding: "13px 16px", color: "#0D2B1A",

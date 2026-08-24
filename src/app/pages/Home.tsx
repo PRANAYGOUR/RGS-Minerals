@@ -418,7 +418,7 @@ function HomeQuoteForm() {
         onFocus={(e) => ((e.target as HTMLElement).style.borderColor = `rgba(22,163,74,0.5)`)}
         onBlur={(e) => ((e.target as HTMLElement).style.borderColor = `rgba(255,255,255,0.1)`)} />
 
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
+      <div className="mobile-grid-1" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
         <input name="entry.1914267891" placeholder="Company" style={{
           background: "rgba(255,255,255,0.05)", border: `1px solid rgba(255,255,255,0.1)`,
           borderRadius: 10, padding: "13px 16px", color: "#fff",

@@ -50,6 +50,7 @@ function Navbar() {
   return (
     <>
       <motion.nav
+        className="mobile-nav-container"
         initial={{ y: -100, opacity: 0, x: "-50%" }}
         animate={{ y: 0, opacity: 1, x: "-50%" }}
         transition={{ duration: 0.6, ease: "easeOut" }}
@@ -71,7 +72,7 @@ function Navbar() {
         }}
       >
         {/* Logo - Always visible */}
-        <Link to="/" style={{
+        <Link className="mobile-nav-logo" to="/" style={{
           fontFamily: '"Instrument Serif", serif', fontSize: 18, color: "#fff",
           letterSpacing: "0.01em", whiteSpace: "nowrap", textDecoration: "none",
           flexShrink: 0
@@ -107,7 +108,7 @@ function Navbar() {
         {/* Action Button & Hamburger */}
         <div style={{ display: "flex", alignItems: "center", gap: 12, flexShrink: 0 }}>
           <motion.div whileHover={{ scale: 0.97 }} whileTap={{ scale: 0.95 }}>
-            <Link to="/contact" style={{
+            <Link className="mobile-nav-btn" to="/contact" style={{
               background: `linear-gradient(135deg, ${V}, ${ROSE})`,
               color: "#fff", borderRadius: 99, padding: isScrolled ? "8px 20px" : "10px 24px",
               fontSize: 13, fontWeight: 600, textDecoration: "none",
